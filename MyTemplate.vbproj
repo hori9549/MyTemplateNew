@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF5AEF42-D74E-404E-B4A2-505E1CFB50F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MyTemplate.My.MyApplication</StartupObject>
+    <RootNamespace>MyTemplate</RootNamespace>
+    <AssemblyName>MyTemplate</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MyTemplate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MyTemplate.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.8.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.8\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.2.0.246, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>packages\SharpZipLib.1.2.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.10.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.2.10.0\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MimeKit, Version=2.10.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.2.10.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.3\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.3\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.3\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>packages\NPOI.2.5.3\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDB.vb" />
+    <Compile Include="clsHTools.vb" />
+    <Compile Include="Dgvの追加.Designer.vb">
+      <DependentUpon>Dgvの追加.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dgvの追加.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enterkeyquestion.Designer.vb">
+      <DependentUpon>enterkeyquestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enterkeyquestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNpoiExcel.Designer.vb">
+      <DependentUpon>frmNpoiExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNpoiExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmサブフォームに渡す.Designer.vb">
+      <DependentUpon>frmサブフォームに渡す.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmサブフォームに渡す.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmメインに返す.Designer.vb">
+      <DependentUpon>frmメインに返す.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmメインに返す.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmメニュー.designer.vb">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmメニュー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm印刷練習.Designer.vb">
+      <DependentUpon>frm印刷練習.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm印刷練習.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IH_TOOLS.designer.vb">
+      <DependentUpon>IH_TOOLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IH_TOOLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IroDukeTEST.Designer.vb">
+      <DependentUpon>IroDukeTEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IroDukeTEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailAndExcel.Designer.vb">
+      <DependentUpon>MailAndExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MailAndExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveMouse.designer.vb">
+      <DependentUpon>MoveMouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MoveMouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TEST.Designer.vb">
+      <DependentUpon>TEST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TEST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Text全選択.Designer.vb">
+      <DependentUpon>Text全選択.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Text全選択.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="印刷練習201117.Designer.vb">
+      <DependentUpon>印刷練習201117.vb</DependentUpon>
+    </Compile>
+    <Compile Include="印刷練習201117.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月カレンダー.Designer.vb">
+      <DependentUpon>月カレンダー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="月カレンダー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dgvの追加.resx">
+      <DependentUpon>Dgvの追加.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enterkeyquestion.resx">
+      <DependentUpon>enterkeyquestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNpoiExcel.resx">
+      <DependentUpon>frmNpoiExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmサブフォームに渡す.resx">
+      <DependentUpon>frmサブフォームに渡す.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmメインに返す.resx">
+      <DependentUpon>frmメインに返す.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmメニュー.resx">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm印刷練習.resx">
+      <DependentUpon>frm印刷練習.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IH_TOOLS.resx">
+      <DependentUpon>IH_TOOLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IroDukeTEST.resx">
+      <DependentUpon>IroDukeTEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailAndExcel.resx">
+      <DependentUpon>MailAndExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveMouse.resx">
+      <DependentUpon>MoveMouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TEST.resx">
+      <DependentUpon>TEST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text全選択.resx">
+      <DependentUpon>Text全選択.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="印刷練習201117.resx">
+      <DependentUpon>印刷練習201117.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月カレンダー.resx">
+      <DependentUpon>月カレンダー.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
