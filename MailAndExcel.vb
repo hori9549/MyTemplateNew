@@ -2,7 +2,7 @@
 Imports ClosedXML.Excel
 Public Class Form3
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Const ExcelFilePath As String = ".\\sample.xlsx"
+        Const ExcelFilePath As String = "sample.xlsx"
         ' Excelファイルを作る
         Using workbook = New XLWorkbook()
             ' Dim workbook = New XLWorkbook
