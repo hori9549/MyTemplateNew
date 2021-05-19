@@ -2,6 +2,10 @@
 Imports NPOI.SS.UserModel
 Public Class frmNpoiExcel
     Private Sub frmNpoiExcel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    End Sub
+
+    Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
+
         ''読込み
         ' Dim WB As IWorkbook = WorkbookFactory.Create("sample.xlsx")
         Dim WB As IWorkbook = WorkbookFactory.Create("excel\会員名簿.xlsx")
@@ -43,5 +47,10 @@ Public Class frmNpoiExcel
 
 
     End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+
 
 End Class
