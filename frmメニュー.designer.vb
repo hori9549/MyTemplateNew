@@ -39,6 +39,8 @@ Partial Class frmメニュー
         Me.Button3 = New System.Windows.Forms.Button()
         Me.btnCintTest = New System.Windows.Forms.Button()
         Me.btnNpoiExcel = New System.Windows.Forms.Button()
+        Me.txtTab = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnEX1
@@ -193,11 +195,31 @@ Partial Class frmメニュー
         Me.btnNpoiExcel.Text = "NOPIで" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Excelファイルの操作"
         Me.btnNpoiExcel.UseVisualStyleBackColor = True
         '
+        'txtTab
+        '
+        Me.txtTab.Location = New System.Drawing.Point(451, 402)
+        Me.txtTab.Name = "txtTab"
+        Me.txtTab.Size = New System.Drawing.Size(80, 45)
+        Me.txtTab.TabIndex = 17
+        Me.txtTab.Text = "TabControlテスト"
+        Me.txtTab.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.Location = New System.Drawing.Point(721, 417)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(67, 30)
+        Me.btnClose.TabIndex = 18
+        Me.btnClose.Text = "閉じる"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'frmメニュー
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.txtTab)
         Me.Controls.Add(Me.btnNpoiExcel)
         Me.Controls.Add(Me.btnCintTest)
         Me.Controls.Add(Me.Button3)
@@ -239,4 +261,6 @@ Partial Class frmメニュー
     Friend WithEvents Button3 As Button
     Friend WithEvents btnCintTest As Button
     Friend WithEvents btnNpoiExcel As Button
+    Friend WithEvents txtTab As Button
+    Friend WithEvents btnClose As Button
 End Class

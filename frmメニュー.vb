@@ -120,4 +120,15 @@ Public Class frmメニュー
         sfrm.ShowDialog()
 
     End Sub
+
+    Private Sub txtTab_Click(sender As Object, e As EventArgs) Handles txtTab.Click
+        'TabControlのテスト
+        Dim sfrm As New frmTabControl
+        sfrm.ShowDialog()
+
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
 End Class
