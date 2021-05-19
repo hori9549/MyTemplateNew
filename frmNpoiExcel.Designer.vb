@@ -22,16 +22,41 @@ Partial Class frmNpoiExcel
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnOpen = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnClose
+        '
+        Me.btnClose.Location = New System.Drawing.Point(379, 173)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(82, 46)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'btnOpen
+        '
+        Me.btnOpen.Location = New System.Drawing.Point(249, 173)
+        Me.btnOpen.Name = "btnOpen"
+        Me.btnOpen.Size = New System.Drawing.Size(82, 46)
+        Me.btnOpen.TabIndex = 1
+        Me.btnOpen.Text = "Open"
+        Me.btnOpen.UseVisualStyleBackColor = True
         '
         'frmNpoiExcel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnOpen)
+        Me.Controls.Add(Me.btnClose)
         Me.Name = "frmNpoiExcel"
         Me.Text = "frmNpoiExcel"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents btnClose As Button
+    Friend WithEvents btnOpen As Button
 End Class
