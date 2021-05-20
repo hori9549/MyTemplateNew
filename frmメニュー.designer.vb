@@ -41,11 +41,18 @@ Partial Class frmメニュー
         Me.btnNpoiExcel = New System.Windows.Forms.Button()
         Me.txtTab = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.btnex2_2 = New System.Windows.Forms.Button()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnEX1
         '
-        Me.btnEX1.Location = New System.Drawing.Point(21, 22)
+        Me.btnEX1.Location = New System.Drawing.Point(51, 6)
         Me.btnEX1.Name = "btnEX1"
         Me.btnEX1.Size = New System.Drawing.Size(205, 146)
         Me.btnEX1.TabIndex = 0
@@ -54,7 +61,7 @@ Partial Class frmメニュー
         '
         'btnEX2
         '
-        Me.btnEX2.Location = New System.Drawing.Point(31, 187)
+        Me.btnEX2.Location = New System.Drawing.Point(61, 171)
         Me.btnEX2.Name = "btnEX2"
         Me.btnEX2.Size = New System.Drawing.Size(133, 80)
         Me.btnEX2.TabIndex = 1
@@ -63,7 +70,7 @@ Partial Class frmメニュー
         '
         'btnHtools
         '
-        Me.btnHtools.Location = New System.Drawing.Point(41, 283)
+        Me.btnHtools.Location = New System.Drawing.Point(71, 267)
         Me.btnHtools.Name = "btnHtools"
         Me.btnHtools.Size = New System.Drawing.Size(133, 80)
         Me.btnHtools.TabIndex = 2
@@ -72,7 +79,7 @@ Partial Class frmメニュー
         '
         'btnEX4色づけ
         '
-        Me.btnEX4色づけ.Location = New System.Drawing.Point(41, 369)
+        Me.btnEX4色づけ.Location = New System.Drawing.Point(71, 353)
         Me.btnEX4色づけ.Name = "btnEX4色づけ"
         Me.btnEX4色づけ.Size = New System.Drawing.Size(133, 80)
         Me.btnEX4色づけ.TabIndex = 3
@@ -81,7 +88,7 @@ Partial Class frmメニュー
         '
         'cmbCMBテスト
         '
-        Me.cmbCMBテスト.Location = New System.Drawing.Point(647, 264)
+        Me.cmbCMBテスト.Location = New System.Drawing.Point(677, 248)
         Me.cmbCMBテスト.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbCMBテスト.Name = "cmbCMBテスト"
         Me.cmbCMBテスト.Size = New System.Drawing.Size(82, 51)
@@ -92,7 +99,7 @@ Partial Class frmメニュー
         'cmb区分CMB
         '
         Me.cmb区分CMB.FormattingEnabled = True
-        Me.cmb区分CMB.Location = New System.Drawing.Point(523, 364)
+        Me.cmb区分CMB.Location = New System.Drawing.Point(553, 348)
         Me.cmb区分CMB.Margin = New System.Windows.Forms.Padding(2)
         Me.cmb区分CMB.Name = "cmb区分CMB"
         Me.cmb区分CMB.Size = New System.Drawing.Size(216, 20)
@@ -101,7 +108,7 @@ Partial Class frmメニュー
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(568, 236)
+        Me.Label1.Location = New System.Drawing.Point(598, 220)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(203, 12)
         Me.Label1.TabIndex = 6
@@ -110,7 +117,7 @@ Partial Class frmメニュー
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(662, 402)
+        Me.Label2.Location = New System.Drawing.Point(692, 386)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(90, 12)
         Me.Label2.TabIndex = 7
@@ -118,14 +125,14 @@ Partial Class frmメニュー
         '
         'txtSelectedID
         '
-        Me.txtSelectedID.Location = New System.Drawing.Point(531, 295)
+        Me.txtSelectedID.Location = New System.Drawing.Point(561, 279)
         Me.txtSelectedID.Name = "txtSelectedID"
         Me.txtSelectedID.Size = New System.Drawing.Size(104, 19)
         Me.txtSelectedID.TabIndex = 8
         '
         'btnEX5
         '
-        Me.btnEX5.Location = New System.Drawing.Point(277, 22)
+        Me.btnEX5.Location = New System.Drawing.Point(307, 6)
         Me.btnEX5.Name = "btnEX5"
         Me.btnEX5.Size = New System.Drawing.Size(133, 80)
         Me.btnEX5.TabIndex = 9
@@ -134,7 +141,7 @@ Partial Class frmメニュー
         '
         'btnEX6
         '
-        Me.btnEX6.Location = New System.Drawing.Point(277, 123)
+        Me.btnEX6.Location = New System.Drawing.Point(307, 107)
         Me.btnEX6.Name = "btnEX6"
         Me.btnEX6.Size = New System.Drawing.Size(119, 45)
         Me.btnEX6.TabIndex = 10
@@ -143,7 +150,7 @@ Partial Class frmメニュー
         '
         'btn全選択
         '
-        Me.btn全選択.Location = New System.Drawing.Point(277, 187)
+        Me.btn全選択.Location = New System.Drawing.Point(307, 171)
         Me.btn全選択.Name = "btn全選択"
         Me.btn全選択.Size = New System.Drawing.Size(119, 45)
         Me.btn全選択.TabIndex = 11
@@ -152,7 +159,7 @@ Partial Class frmメニュー
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(277, 320)
+        Me.Button1.Location = New System.Drawing.Point(307, 304)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(152, 106)
         Me.Button1.TabIndex = 12
@@ -161,7 +168,7 @@ Partial Class frmメニュー
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(277, 250)
+        Me.Button2.Location = New System.Drawing.Point(307, 234)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(133, 64)
         Me.Button2.TabIndex = 13
@@ -170,7 +177,7 @@ Partial Class frmメニュー
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(531, 22)
+        Me.Button3.Location = New System.Drawing.Point(561, 6)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(119, 45)
         Me.Button3.TabIndex = 14
@@ -179,7 +186,7 @@ Partial Class frmメニュー
         '
         'btnCintTest
         '
-        Me.btnCintTest.Location = New System.Drawing.Point(544, 108)
+        Me.btnCintTest.Location = New System.Drawing.Point(574, 92)
         Me.btnCintTest.Name = "btnCintTest"
         Me.btnCintTest.Size = New System.Drawing.Size(128, 69)
         Me.btnCintTest.TabIndex = 15
@@ -188,7 +195,7 @@ Partial Class frmメニュー
         '
         'btnNpoiExcel
         '
-        Me.btnNpoiExcel.Location = New System.Drawing.Point(402, 187)
+        Me.btnNpoiExcel.Location = New System.Drawing.Point(432, 171)
         Me.btnNpoiExcel.Name = "btnNpoiExcel"
         Me.btnNpoiExcel.Size = New System.Drawing.Size(80, 45)
         Me.btnNpoiExcel.TabIndex = 16
@@ -197,7 +204,7 @@ Partial Class frmメニュー
         '
         'txtTab
         '
-        Me.txtTab.Location = New System.Drawing.Point(451, 402)
+        Me.txtTab.Location = New System.Drawing.Point(481, 386)
         Me.txtTab.Name = "txtTab"
         Me.txtTab.Size = New System.Drawing.Size(80, 45)
         Me.txtTab.TabIndex = 17
@@ -206,41 +213,86 @@ Partial Class frmメニュー
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(721, 417)
+        Me.btnClose.Location = New System.Drawing.Point(915, 511)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(67, 30)
         Me.btnClose.TabIndex = 18
         Me.btnClose.Text = "閉じる"
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(56, 44)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(843, 497)
+        Me.TabControl1.TabIndex = 19
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.btnEX1)
+        Me.TabPage1.Controls.Add(Me.btnEX2)
+        Me.TabPage1.Controls.Add(Me.txtTab)
+        Me.TabPage1.Controls.Add(Me.btnHtools)
+        Me.TabPage1.Controls.Add(Me.btnNpoiExcel)
+        Me.TabPage1.Controls.Add(Me.btnEX4色づけ)
+        Me.TabPage1.Controls.Add(Me.btnCintTest)
+        Me.TabPage1.Controls.Add(Me.cmbCMBテスト)
+        Me.TabPage1.Controls.Add(Me.Button3)
+        Me.TabPage1.Controls.Add(Me.cmb区分CMB)
+        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.Controls.Add(Me.Label1)
+        Me.TabPage1.Controls.Add(Me.Button1)
+        Me.TabPage1.Controls.Add(Me.Label2)
+        Me.TabPage1.Controls.Add(Me.btn全選択)
+        Me.TabPage1.Controls.Add(Me.txtSelectedID)
+        Me.TabPage1.Controls.Add(Me.btnEX6)
+        Me.TabPage1.Controls.Add(Me.btnEX5)
+        Me.TabPage1.ForeColor = System.Drawing.Color.Navy
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(835, 471)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "EX 1"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.btnex2_2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(835, 471)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "EX 2"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'btnex2_2
+        '
+        Me.btnex2_2.Location = New System.Drawing.Point(41, 20)
+        Me.btnex2_2.Name = "btnex2_2"
+        Me.btnex2_2.Size = New System.Drawing.Size(98, 55)
+        Me.btnex2_2.TabIndex = 0
+        Me.btnex2_2.Text = "Ex2-2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "補間文字"
+        Me.btnex2_2.UseVisualStyleBackColor = True
+        '
         'frmメニュー
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1026, 570)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.txtTab)
-        Me.Controls.Add(Me.btnNpoiExcel)
-        Me.Controls.Add(Me.btnCintTest)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btn全選択)
-        Me.Controls.Add(Me.btnEX6)
-        Me.Controls.Add(Me.btnEX5)
-        Me.Controls.Add(Me.txtSelectedID)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cmb区分CMB)
-        Me.Controls.Add(Me.cmbCMBテスト)
-        Me.Controls.Add(Me.btnEX4色づけ)
-        Me.Controls.Add(Me.btnHtools)
-        Me.Controls.Add(Me.btnEX2)
-        Me.Controls.Add(Me.btnEX1)
         Me.Name = "frmメニュー"
         Me.Text = "frmメニュー"
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -263,4 +315,8 @@ Partial Class frmメニュー
     Friend WithEvents btnNpoiExcel As Button
     Friend WithEvents txtTab As Button
     Friend WithEvents btnClose As Button
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents btnex2_2 As Button
 End Class

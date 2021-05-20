@@ -127,8 +127,15 @@ Public Class frmメニュー
         sfrm.ShowDialog()
 
     End Sub
+    Private Sub btnex2_2_Click(sender As Object, e As EventArgs) Handles btnex2_2.Click
+        '補間文字のテスト
+        Dim sfrm As New frmEx2_2
+        sfrm.ShowDialog()
+
+    End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
+
 End Class
