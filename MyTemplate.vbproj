@@ -137,6 +137,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.vb" />
     <Compile Include="clsDB.vb" />
     <Compile Include="clsHTools.vb" />
     <Compile Include="Dgvの追加.Designer.vb">
@@ -161,12 +162,6 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNpoiExcel.Designer.vb">
@@ -275,6 +270,12 @@
     <Compile Include="月カレンダー.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="補間文字.Designer.vb">
+      <DependentUpon>補間文字.vb</DependentUpon>
+    </Compile>
+    <Compile Include="補間文字.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dgvの追加.resx">
@@ -288,9 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNpoiExcel.resx">
       <DependentUpon>frmNpoiExcel.vb</DependentUpon>
@@ -339,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="月カレンダー.resx">
       <DependentUpon>月カレンダー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="補間文字.resx">
+      <DependentUpon>補間文字.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
