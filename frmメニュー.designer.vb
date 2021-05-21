@@ -276,7 +276,7 @@ Partial Class frmメニュー
         Me.btnex2_2.Name = "btnex2_2"
         Me.btnex2_2.Size = New System.Drawing.Size(98, 55)
         Me.btnex2_2.TabIndex = 0
-        Me.btnex2_2.Text = "Ex2-2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "補間文字"
+        Me.btnex2_2.Text = "Ex2-2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "補間文字" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "コンストラクタ"
         Me.btnex2_2.UseVisualStyleBackColor = True
         '
         'frmメニュー

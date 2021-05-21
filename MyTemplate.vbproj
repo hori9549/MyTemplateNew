@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.vb" />
+    <Compile Include="clsTest.vb" />
     <Compile Include="clsDB.vb" />
     <Compile Include="clsHTools.vb" />
     <Compile Include="Dgvの追加.Designer.vb">
@@ -212,6 +213,7 @@
     <Compile Include="MailAndExcel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="MoveMouse.designer.vb">
       <DependentUpon>MoveMouse.vb</DependentUpon>
     </Compile>
@@ -270,10 +272,10 @@
     <Compile Include="月カレンダー.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="補間文字.Designer.vb">
-      <DependentUpon>補間文字.vb</DependentUpon>
+    <Compile Include="コンストラクタ補間文字.Designer.vb">
+      <DependentUpon>コンストラクタ補間文字.vb</DependentUpon>
     </Compile>
-    <Compile Include="補間文字.vb">
+    <Compile Include="コンストラクタ補間文字.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -338,8 +340,8 @@
     <EmbeddedResource Include="月カレンダー.resx">
       <DependentUpon>月カレンダー.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="補間文字.resx">
-      <DependentUpon>補間文字.vb</DependentUpon>
+    <EmbeddedResource Include="コンストラクタ補間文字.resx">
+      <DependentUpon>コンストラクタ補間文字.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

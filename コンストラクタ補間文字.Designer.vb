@@ -26,6 +26,8 @@ Partial Class frmEx2_2
         Me.btn閉じる = New System.Windows.Forms.Button()
         Me.btnConstructer = New System.Windows.Forms.Button()
         Me.btnConstractor2 = New System.Windows.Forms.Button()
+        Me.btnClass = New System.Windows.Forms.Button()
+        Me.btnModuleCall = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -49,7 +51,7 @@ Partial Class frmEx2_2
         '
         'btnConstructer
         '
-        Me.btnConstructer.Location = New System.Drawing.Point(113, 108)
+        Me.btnConstructer.Location = New System.Drawing.Point(177, 108)
         Me.btnConstructer.Name = "btnConstructer"
         Me.btnConstructer.Size = New System.Drawing.Size(97, 62)
         Me.btnConstructer.TabIndex = 2
@@ -58,24 +60,44 @@ Partial Class frmEx2_2
         '
         'btnConstractor2
         '
-        Me.btnConstractor2.Location = New System.Drawing.Point(113, 199)
+        Me.btnConstractor2.Location = New System.Drawing.Point(177, 199)
         Me.btnConstractor2.Name = "btnConstractor2"
         Me.btnConstractor2.Size = New System.Drawing.Size(97, 62)
         Me.btnConstractor2.TabIndex = 3
         Me.btnConstractor2.Text = "コンストラクタ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "オーバーロード" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Integerの引数" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "のTEST"
         Me.btnConstractor2.UseVisualStyleBackColor = True
         '
+        'btnClass
+        '
+        Me.btnClass.Location = New System.Drawing.Point(335, 108)
+        Me.btnClass.Name = "btnClass"
+        Me.btnClass.Size = New System.Drawing.Size(97, 62)
+        Me.btnClass.TabIndex = 4
+        Me.btnClass.Text = "クラスを使う" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.btnClass.UseVisualStyleBackColor = True
+        '
+        'btnModuleCall
+        '
+        Me.btnModuleCall.Location = New System.Drawing.Point(10, 108)
+        Me.btnModuleCall.Name = "btnModuleCall"
+        Me.btnModuleCall.Size = New System.Drawing.Size(97, 62)
+        Me.btnModuleCall.TabIndex = 5
+        Me.btnModuleCall.Text = "Moduleの" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "テスト" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Irodukeを" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Module化"
+        Me.btnModuleCall.UseVisualStyleBackColor = True
+        '
         'frmEx2_2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnModuleCall)
+        Me.Controls.Add(Me.btnClass)
         Me.Controls.Add(Me.btnConstractor2)
         Me.Controls.Add(Me.btnConstructer)
         Me.Controls.Add(Me.btn閉じる)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmEx2_2"
-        Me.Text = "frm補間文字"
+        Me.Text = "コンストラクタ。補間文字"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -85,4 +107,6 @@ Partial Class frmEx2_2
     Friend WithEvents btn閉じる As Button
     Friend WithEvents btnConstructer As Button
     Friend WithEvents btnConstractor2 As Button
+    Friend WithEvents btnClass As Button
+    Friend WithEvents btnModuleCall As Button
 End Class
