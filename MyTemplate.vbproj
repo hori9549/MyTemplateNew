@@ -171,6 +171,18 @@
     <Compile Include="frmNpoiExcel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTcpClient.Designer.vb">
+      <DependentUpon>frmTcpClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTcpClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTcpServer.Designer.vb">
+      <DependentUpon>frmTcpServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTcpServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmサブフォームに渡す.Designer.vb">
       <DependentUpon>frmサブフォームに渡す.vb</DependentUpon>
     </Compile>
@@ -294,6 +306,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNpoiExcel.resx">
       <DependentUpon>frmNpoiExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTcpClient.resx">
+      <DependentUpon>frmTcpClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTcpServer.resx">
+      <DependentUpon>frmTcpServer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmサブフォームに渡す.resx">
       <DependentUpon>frmサブフォームに渡す.vb</DependentUpon>
