@@ -4,7 +4,7 @@
     End Sub
     Public Shared Sub Main()
         'ListenするIPアドレス
-        Dim ipString As String = "192.168.0.26"
+        Dim ipString As String = "192.168.0.24"
         Dim ipAdd As System.Net.IPAddress = System.Net.IPAddress.Parse(ipString)
 
         'ホスト名からIPアドレスを取得する時は、次のようにする
