@@ -165,6 +165,18 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDObonClient.Designer.vb">
+      <DependentUpon>frmDObonClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDObonClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDobonServer.Designer.vb">
+      <DependentUpon>frmDobonServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDobonServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmNpoiExcel.Designer.vb">
       <DependentUpon>frmNpoiExcel.vb</DependentUpon>
     </Compile>
@@ -303,6 +315,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDObonClient.resx">
+      <DependentUpon>frmDObonClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDobonServer.resx">
+      <DependentUpon>frmDobonServer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNpoiExcel.resx">
       <DependentUpon>frmNpoiExcel.vb</DependentUpon>
