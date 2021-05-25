@@ -12,7 +12,7 @@
         End If
 
         'サーバーのIPアドレス（または、ホスト名）とポート番号
-        Dim ipOrHost As String = "192.168.0.24"
+        Dim ipOrHost As String = "192.168.0.26"
         'Dim ipOrHost As String = "localhost"
         Dim port As Integer = 2001
 
