@@ -26,12 +26,11 @@ Public Class Form3
     End Sub
 
     Private Sub btnSendMail_Click(sender As Object, e As EventArgs) Handles btnSendMail.Click
-        '
+        '警告
+        Dim sfrm As New sfrmMailTest環境
+        sfrm.ShowDialog()
         'Gmailに送信
         'https://www.chuken-engineer.com/entry/2019/08/01/070754
-        MsgBox("Mailテストは、Googleアカウントの" & vbCr &
-            "{安全性の低いアプリのアクセス}を許可するを一時的にONしてください")   '& vbCr &
-        '  https: //myaccount.google.com/?tab=kk)
 
         MailSend("pc_horiuchi@yahoo.co.jp", "hori9549@gmail.com", "g9459irohe", "test", "テスト送信210526。")
     End Sub
