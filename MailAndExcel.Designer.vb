@@ -24,6 +24,7 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSendMail = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,11 +45,21 @@ Partial Class Form3
         Me.Button1.Text = "excelファイルを開く"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnSendMail
+        '
+        Me.btnSendMail.Location = New System.Drawing.Point(77, 55)
+        Me.btnSendMail.Name = "btnSendMail"
+        Me.btnSendMail.Size = New System.Drawing.Size(82, 28)
+        Me.btnSendMail.TabIndex = 2
+        Me.btnSendMail.Text = "Mail Test"
+        Me.btnSendMail.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnSendMail)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form3"
@@ -60,4 +71,5 @@ Partial Class Form3
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnSendMail As Button
 End Class
