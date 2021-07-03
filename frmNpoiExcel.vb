@@ -6,14 +6,16 @@ Public Class frmNpoiExcel
 
     Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
 
+        MsgBox("GAP約定通知を読んでみよう")
+
         ''excel ファイルを選んでもらう
         '
         Dim sフォルダ As String = "newExcel"
         Dim sファイル As String = sフォルダ & "A.xlsx"
         Dim SFD As New OpenFileDialog
         Dim sFname As String        'selected file name 
-        Dim di As New System.IO.DirectoryInfo(sフォルダ)
-        di.Create()
+        'Dim di As New System.IO.DirectoryInfo(sフォルダ)
+        'di.Create()
         With SFD
             .Filter = "excelファイル(*.xlsx,*.xlmx)|*.xlsx;*.xlmx"
             .Title = "excelファイルを選択してください"
@@ -28,9 +30,9 @@ Public Class frmNpoiExcel
             Console.WriteLine(.FileName)
             sFname = .FileName
             '' 更新
-            If System.IO.File.Exists(sファイル) Then
-                System.IO.File.Delete(sファイル)
-            End If
+            'If System.IO.File.Exists(sファイル) Then
+            '    System.IO.File.Delete(sファイル)
+            'End If
 
         End With
 
@@ -65,7 +67,6 @@ Public Class frmNpoiExcel
         '   WS.CreateRow(5).CreateCell(0).SetCellValue(1000)
         '  WS.GetRow(5).GetCell(0).SetCellValue(1000)
 
-        MsgBox("GAP約定通知を読んでみよう")
 
         Dim WB As IWorkbook = WorkbookFactory.Create(sFname)
         Dim WS As ISheet = WB.GetSheetAt(0)         ''最初のシート取得
