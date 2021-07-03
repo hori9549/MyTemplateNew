@@ -10,8 +10,8 @@ Public Class frmNpoiExcel
 
         ''excel ファイルを選んでもらう
         '
-        Dim sフォルダ As String = "newExcel"
-        Dim sファイル As String = sフォルダ & "A.xlsx"
+        'Dim sフォルダ As String = "newExcel"
+        'Dim sファイル As String = sフォルダ & "A.xlsx"
         Dim SFD As New OpenFileDialog
         Dim sFname As String        'selected file name 
         'Dim di As New System.IO.DirectoryInfo(sフォルダ)
@@ -73,19 +73,35 @@ Public Class frmNpoiExcel
         Dim iLastRow As Integer = WS.LastRowNum   ''シートの最終行数取得
 
         ''最終行まで読込み
-        For iCount As Integer = 0 To iLastRow - 1
-            Dim getRow As IRow = WS.GetRow(iCount)　''行取得
+        ' For iCount As Integer = 0 To iLastRow - 1
 
-            Dim getCell約定日 = getRow.GetCell(3)         ''約定日
-            Dim getCell取引名 = getRow.GetCell(6)         ''取引名
-            Dim getCell銘柄名 = getRow.GetCell(9)         ''銘柄名
+        For iCount As Integer = 0 To 7
 
-            ''セルにデータがあればメッセージ表示
-            MsgBox($" {getCell約定日}, {getCell取引名}, {getCell銘柄名}")
-            'If getCell IsNot Nothing Then
-            '    Console.WriteLine(getCell.StringCellValue)
-            'End If
+
+
+            ''/*****************空伯がでてくるまで読み続ける******************/
+            'Dim r As Integer = 1
+
+            Dim getRow As IRow = WS.GetRow(iCount) ''行取得
+
+
+            If getRow.GetCell(0) IsNot Nothing Then   '空白がでてくるまで読み続ける
+
+                Dim getCell約定日 = getRow.GetCell(3)         ''約定日
+                Dim getCell取引名 = getRow.GetCell(6)         ''取引名
+                Dim getCell銘柄名 = getRow.GetCell(9)         ''銘柄名
+
+                ''セルにデータがあればメッセージ表示
+                MsgBox($" {getCell約定日}, {getCell取引名}, {getCell銘柄名}")
+                'If getCell IsNot Nothing Then
+                '    Console.WriteLine(getCell.StringCellValue)
+            Else
+
+
+
+            End If
         Next
+        WB.Close()
 
     End Sub
 
