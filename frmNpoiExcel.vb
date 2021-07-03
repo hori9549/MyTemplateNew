@@ -35,46 +35,56 @@ Public Class frmNpoiExcel
         End With
 
         ''読込み
-        ' Dim WB As IWorkbook = WorkbookFactory.Create("sample.xlsx")
-        '  Dim WB As IWorkbook = WorkbookFactory.Create("excel\会員名簿.xlsx")
-        Dim WB As IWorkbook = WorkbookFactory.Create(sFname)
+        '' Dim WB As IWorkbook = WorkbookFactory.Create("sample.xlsx")
+        ''  Dim WB As IWorkbook = WorkbookFactory.Create("excel\会員名簿.xlsx")
+        'Dim WB As IWorkbook = WorkbookFactory.Create(sFname)
 
-        Dim WS As ISheet = WB.GetSheetAt(0)         ''最初のシート取得
-        Dim iLastRow As Integer = WS.LastRowNum   ''シートの最終行数取得
-        ''最終行まで読込み
-        MsgBox(iLastRow.ToString)
-        For iCount As Integer = 0 To iLastRow
-            Dim getRow As IRow = WS.GetRow(iCount)　''行取得
-            Dim getCell = getRow.GetCell(0)         ''取得した行のA列取得
-            Dim str As String
+        'Dim WS As ISheet = WB.GetSheetAt(0)         ''最初のシート取得
+        'Dim iLastRow As Integer = WS.LastRowNum   ''シートの最終行数取得
+        '''最終行まで読込み
+        'MsgBox(iLastRow.ToString)
+        'For iCount As Integer = 0 To iLastRow
+        '    Dim getRow As IRow = WS.GetRow(iCount)　''行取得
+        '    Dim getCell = getRow.GetCell(0)         ''取得した行のA列取得
+        '    Dim str As String
 
+        '    If WS.GetRow(iCount).GetCell(2) Is Nothing Then     'nullならErrorになる
 
+        '        str = ""
+        '    Else
+        '        ''セルにデータがあればメッセージ表示
 
+        '        str = WS.GetRow(iCount).GetCell(2).ToString
+        '    End If
+        '    MsgBox(str)
 
-
-            If WS.GetRow(iCount).GetCell(2) Is Nothing Then     'nullならErrorになる
-
-
-
-
-                str = ""
-            Else
-                ''セルにデータがあればメッセージ表示
-
-                str = WS.GetRow(iCount).GetCell(2).ToString
-            End If
-            MsgBox(str)
-
-        Next
-
-
+        'Next
 
         'Dim rowIndex = 0
         'Dim columnIndex = 0
         '   WS.CreateRow(5).CreateCell(0).SetCellValue(1000)
         '  WS.GetRow(5).GetCell(0).SetCellValue(1000)
 
+        MsgBox("GAP約定通知を読んでみよう")
 
+        Dim WB As IWorkbook = WorkbookFactory.Create(sFname)
+        Dim WS As ISheet = WB.GetSheetAt(0)         ''最初のシート取得
+        Dim iLastRow As Integer = WS.LastRowNum   ''シートの最終行数取得
+
+        ''最終行まで読込み
+        For iCount As Integer = 0 To iLastRow - 1
+            Dim getRow As IRow = WS.GetRow(iCount)　''行取得
+
+            Dim getCell約定日 = getRow.GetCell(3)         ''約定日
+            Dim getCell取引名 = getRow.GetCell(6)         ''取引名
+            Dim getCell銘柄名 = getRow.GetCell(9)         ''銘柄名
+
+            ''セルにデータがあればメッセージ表示
+            MsgBox($" {getCell約定日}, {getCell取引名}, {getCell銘柄名}")
+            'If getCell IsNot Nothing Then
+            '    Console.WriteLine(getCell.StringCellValue)
+            'End If
+        Next
 
     End Sub
 
