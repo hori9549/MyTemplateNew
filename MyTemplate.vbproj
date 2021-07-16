@@ -201,6 +201,10 @@
     <Compile Include="frmサブフォームに渡す.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmベース.Designer.vb" />
+    <Compile Include="frmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmメインに返す.Designer.vb">
       <DependentUpon>frmメインに返す.vb</DependentUpon>
     </Compile>
@@ -346,6 +350,7 @@
     <EmbeddedResource Include="frmサブフォームに渡す.resx">
       <DependentUpon>frmサブフォームに渡す.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmベース.resx" />
     <EmbeddedResource Include="frmメインに返す.resx">
       <DependentUpon>frmメインに返す.vb</DependentUpon>
     </EmbeddedResource>
