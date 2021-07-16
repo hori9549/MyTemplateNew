@@ -33,16 +33,19 @@ Partial Class frmふりがな自動入力_EXCEL使用
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         '漢字
         '
         Me.漢字.AutoSize = True
-        Me.漢字.Location = New System.Drawing.Point(57, 94)
+        Me.漢字.Location = New System.Drawing.Point(68, 225)
         Me.漢字.Name = "漢字"
-        Me.漢字.Size = New System.Drawing.Size(38, 12)
+        Me.漢字.Size = New System.Drawing.Size(191, 12)
         Me.漢字.TabIndex = 0
-        Me.漢字.Text = "Label1"
+        Me.漢字.Text = "Test2 イベントとプロシージャを結び付け"
         '
         'txt変換元
         '
@@ -50,7 +53,6 @@ Partial Class frmふりがな自動入力_EXCEL使用
         Me.txt変換元.Name = "txt変換元"
         Me.txt変換元.Size = New System.Drawing.Size(100, 19)
         Me.txt変換元.TabIndex = 1
-        Me.txt変換元.Text = "確定"
         '
         'txt結果
         '
@@ -131,11 +133,41 @@ Partial Class frmふりがな自動入力_EXCEL使用
         Me.Label7.TabIndex = 9
         Me.Label7.Text = "↑"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(70, 263)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(70, 32)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(70, 319)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(70, 32)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(108, 31)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(187, 12)
+        Me.Label8.TabIndex = 13
+        Me.Label8.Text = "Test1 ふりがな自動入力_EXCEL使用"
+        '
         'frmふりがな自動入力_EXCEL使用
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label4)
@@ -165,4 +197,7 @@ Partial Class frmふりがな自動入力_EXCEL使用
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label8 As Label
 End Class

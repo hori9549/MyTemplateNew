@@ -3,6 +3,7 @@
 ''' </summary>
 Public Class frmふりがな自動入力_EXCEL使用
     Private Sub ふりがな自動入力_EXCEL使用_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler txt変換元.Enter, AddressOf KanjiToKana
         txt変換元.Select()
     End Sub
     Private Sub KanjiToKana()
@@ -26,4 +27,18 @@ Public Class frmふりがな自動入力_EXCEL使用
     Private Sub btn変換_Click(sender As Object, e As EventArgs) Handles btn変換.Click
         Call KanjiToKana()
     End Sub
+
+
+
+    ''' <summary>
+    ''' イベントとプロシージャを結び付け
+    ''' </summary>
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+            AddHandler Button2.Click, AddressOf myclick
+        End Sub
+        Private Sub myclick(sender As Object, e As EventArgs)
+            MsgBox(sender.name)
+        End Sub
+
 End Class
