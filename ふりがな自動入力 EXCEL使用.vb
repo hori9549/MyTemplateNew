@@ -1,4 +1,6 @@
-﻿
+﻿''' <summary>
+''' 210716 ふりがな自動入力(簡易版）_EXCEL使用
+''' </summary>
 Public Class frmふりがな自動入力_EXCEL使用
     Private Sub ふりがな自動入力_EXCEL使用_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txt変換元.Select()
