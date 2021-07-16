@@ -138,4 +138,7 @@ Public Class frmメニュー
         Me.Close()
     End Sub
 
+    Private Sub btnKannjiToHiragana_Click(sender As Object, e As EventArgs) Handles btnKannjiToHiragana.Click
+
+    End Sub
 End Class
