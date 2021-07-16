@@ -139,6 +139,9 @@ Public Class frmメニュー
     End Sub
 
     Private Sub btnKannjiToHiragana_Click(sender As Object, e As EventArgs) Handles btnKannjiToHiragana.Click
+        ' ふりがな自動入力_EXCEL使用
+        Dim sfrm As New frmふりがな自動入力_EXCEL使用
+        sfrm.ShowDialog()
 
     End Sub
 End Class

@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.MyTemplate.frmふりがな自動入力_EXCEL使用
+            Me.MainForm = Global.MyTemplate.frmメニュー
         End Sub
     End Class
 End Namespace
