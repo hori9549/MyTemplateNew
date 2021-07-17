@@ -1,7 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class frmふりがな自動入力_EXCEL使用
-    ' Inherits System.Windows.Forms.Form
-    Inherits frmベース
+    Inherits System.Windows.Forms.Form
+    ' Inherits frmベース
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
