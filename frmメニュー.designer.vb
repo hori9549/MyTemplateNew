@@ -44,8 +44,9 @@ Partial Class frmメニュー
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.btnex2_2 = New System.Windows.Forms.Button()
         Me.btnKannjiToHiragana = New System.Windows.Forms.Button()
+        Me.btnex2_2 = New System.Windows.Forms.Button()
+        Me.btn継承TEST = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -262,6 +263,7 @@ Partial Class frmメニュー
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.btn継承TEST)
         Me.TabPage2.Controls.Add(Me.btnKannjiToHiragana)
         Me.TabPage2.Controls.Add(Me.btnex2_2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
@@ -272,6 +274,15 @@ Partial Class frmメニュー
         Me.TabPage2.Text = "EX 2"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'btnKannjiToHiragana
+        '
+        Me.btnKannjiToHiragana.Location = New System.Drawing.Point(41, 108)
+        Me.btnKannjiToHiragana.Name = "btnKannjiToHiragana"
+        Me.btnKannjiToHiragana.Size = New System.Drawing.Size(142, 51)
+        Me.btnKannjiToHiragana.TabIndex = 18
+        Me.btnKannjiToHiragana.Text = "漢字をひらがなに" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "変換" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.btnKannjiToHiragana.UseVisualStyleBackColor = True
+        '
         'btnex2_2
         '
         Me.btnex2_2.Location = New System.Drawing.Point(41, 20)
@@ -281,14 +292,14 @@ Partial Class frmメニュー
         Me.btnex2_2.Text = "Ex2-2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "補間文字" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "コンストラクタ"
         Me.btnex2_2.UseVisualStyleBackColor = True
         '
-        'btnKannjiToHiragana
+        'btn継承TEST
         '
-        Me.btnKannjiToHiragana.Location = New System.Drawing.Point(41, 108)
-        Me.btnKannjiToHiragana.Name = "btnKannjiToHiragana"
-        Me.btnKannjiToHiragana.Size = New System.Drawing.Size(142, 51)
-        Me.btnKannjiToHiragana.TabIndex = 18
-        Me.btnKannjiToHiragana.Text = "漢字をひらがなに" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "変換" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.btnKannjiToHiragana.UseVisualStyleBackColor = True
+        Me.btn継承TEST.Location = New System.Drawing.Point(41, 182)
+        Me.btn継承TEST.Name = "btn継承TEST"
+        Me.btn継承TEST.Size = New System.Drawing.Size(142, 51)
+        Me.btn継承TEST.TabIndex = 19
+        Me.btn継承TEST.Text = "継承TEST"
+        Me.btn継承TEST.UseVisualStyleBackColor = True
         '
         'frmメニュー
         '
@@ -331,4 +342,5 @@ Partial Class frmメニュー
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents btnex2_2 As Button
     Friend WithEvents btnKannjiToHiragana As Button
+    Friend WithEvents btn継承TEST As Button
 End Class

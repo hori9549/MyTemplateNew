@@ -318,6 +318,12 @@
     <Compile Include="コンストラクタ補間文字.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="継承test_5.Designer.vb">
+      <DependentUpon>継承test_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="継承test_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dgvの追加.resx">
@@ -401,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="コンストラクタ補間文字.resx">
       <DependentUpon>コンストラクタ補間文字.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="継承test_5.resx">
+      <DependentUpon>継承test_5.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
