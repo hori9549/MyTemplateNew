@@ -1,4 +1,4 @@
-﻿Public Class Form5
+﻿Public Class frm継承_6
     Class baseClass
         Public Overridable Sub testMethod()
             MsgBox("Base class string")

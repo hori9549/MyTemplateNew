@@ -47,6 +47,7 @@ Partial Class frmメニュー
         Me.btnKannjiToHiragana = New System.Windows.Forms.Button()
         Me.btnex2_2 = New System.Windows.Forms.Button()
         Me.btn継承TEST = New System.Windows.Forms.Button()
+        Me.btn継承test６ = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -263,6 +264,7 @@ Partial Class frmメニュー
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.btn継承test６)
         Me.TabPage2.Controls.Add(Me.btn継承TEST)
         Me.TabPage2.Controls.Add(Me.btnKannjiToHiragana)
         Me.TabPage2.Controls.Add(Me.btnex2_2)
@@ -300,6 +302,15 @@ Partial Class frmメニュー
         Me.btn継承TEST.TabIndex = 19
         Me.btn継承TEST.Text = "継承TEST"
         Me.btn継承TEST.UseVisualStyleBackColor = True
+        '
+        'btn継承test６
+        '
+        Me.btn継承test６.Location = New System.Drawing.Point(41, 253)
+        Me.btn継承test６.Name = "btn継承test６"
+        Me.btn継承test６.Size = New System.Drawing.Size(142, 51)
+        Me.btn継承test６.TabIndex = 20
+        Me.btn継承test６.Text = "継承TEST6"
+        Me.btn継承test６.UseVisualStyleBackColor = True
         '
         'frmメニュー
         '
@@ -343,4 +354,5 @@ Partial Class frmメニュー
     Friend WithEvents btnex2_2 As Button
     Friend WithEvents btnKannjiToHiragana As Button
     Friend WithEvents btn継承TEST As Button
+    Friend WithEvents btn継承test６ As Button
 End Class
