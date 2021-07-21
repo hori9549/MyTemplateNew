@@ -144,4 +144,14 @@ Public Class frmメニュー
         sfrm.ShowDialog()
 
     End Sub
+
+    Private Sub btn継承TEST_Click(sender As Object, e As EventArgs) Handles btn継承TEST.Click
+        Dim sfrm As New frm継承test_5
+        sfrm.ShowDialog()
+    End Sub
+
+    Private Sub btn継承test６_Click(sender As Object, e As EventArgs) Handles btn継承test６.Click
+        Dim sfrm As New frm継承_6
+        sfrm.ShowDialog()
+    End Sub
 End Class
