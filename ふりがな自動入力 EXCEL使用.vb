@@ -43,10 +43,10 @@ Public Class frmふりがな自動入力_EXCEL使用
     Private Sub frmふりがな自動入力_EXCEL使用_KeyDown(ByVal sender As Object,
                                      ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Enter Then
-            'If e.Control = False Then
-            '    '[Enter]キーで次の TabIndex があるコントロールへフォーカスを移す
-            '    Me.SelectNextControl(Me.ActiveControl, Not e.Shift, True, True, True)
-            'End If
+            If e.Control = False Then   'Ctrlキーが押されていない 
+                '[Enter]キーで次の TabIndex があるコントロールへフォーカスを移す
+                Me.SelectNextControl(Me.ActiveControl, Not e.Shift, True, True, True)
+            End If
             Call godHand()
         End If
     End Sub
